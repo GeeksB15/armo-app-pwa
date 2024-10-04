@@ -24,7 +24,7 @@ Geeks.ExternalSQL.Sql = function (xSql){
 			sentence.push(xSql[sql]);
 		}
 
-		//url = "https://api.b15.com.br/sql/srv114/All"
+		//url = "https://${localStorage.getItem("objLogin_itnApi")}/sql/srv114/All"
 		data = JSON.stringify(sentence)
 	}
     
@@ -86,7 +86,7 @@ Geeks.Plat.Sql = function (xSql){
 			sentence.push(xSql[sql]);
 		}
 
-		//url = "https://api.b15.com.br/sql/srv114/All"
+		//url = "https://${localStorage.getItem("objLogin_itnApi")}/sql/srv114/All"
 		data = JSON.stringify(sentence)
 	}
     
