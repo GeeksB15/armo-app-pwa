@@ -4,8 +4,10 @@ self.addEventListener('install', event => {
       caches.open('app-cache').then(cache => {
         return cache.addAll([
           '/',
-          '/index.html',
           '/favicon.ico',
+          '/index.html',
+          'manifest.json',
+          'sw.js',
           '/js/App.js',
           '/js/Geeks.js'
         ]);
