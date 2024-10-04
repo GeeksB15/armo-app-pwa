@@ -6,7 +6,7 @@ self.addEventListener('install', event => {
           'favicon.ico',
           'index.html',
           'manifest.json',
-          '/js/App.js',
+          'js/App.js',
           'js/Geeks.js'
         ]);
       })
