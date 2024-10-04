@@ -3,11 +3,11 @@ self.addEventListener('install', event => {
     event.waitUntil(
       caches.open('app-cache').then(cache => {
         return cache.addAll([
-          '/favicon.ico',
-          '/index.html',
-          '/manifest.json',
+          'favicon.ico',
+          'index.html',
+          'manifest.json',
           '/js/App.js',
-          '/js/Geeks.js'
+          'js/Geeks.js'
         ]);
       })
     );
