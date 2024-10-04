@@ -4,10 +4,11 @@ self.addEventListener('install', event => {
       caches.open('app-cache').then(cache => {
         return cache.addAll([
           '/',
-          '/favicon.ico',
+          'armo-app-pwa/',
+          'armo-app-pwa/favicon.ico',
           '/index.html',
-          'manifest.json',
-          'sw.js',
+          'armo-app-pwa/manifest.json',
+          'armo-app-pwa/sw.js',
           '/js/App.js',
           '/js/Geeks.js'
         ]);
