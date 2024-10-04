@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>B15_JS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="kendo2018.2.620/styles/kendo.mobile.all.min.css" >
+
+    <script src="kendo2018.2.620/js/jquery.min.js"></script>
+    <script src="kendo2018.2.620/js/kendo.all.min.js"></script>
+    <script src="kendo2018.2.620/js/cultures/kendo.culture.pt-BR.js"></script>
+
+    <script src="js/MD5.js"></script>
+    <script src="js/Geeks.js"></script>
+    <script src="js/App.js"></script>
+    <script src="js/underscore.js"></script>
+
+</head>
+<body>
+
+<!-- obj Login  -->
+    <div data-role="view" data-title="B15 - Confie nos números!" id="objLogin" data-init="objLogin_init" data-transition="overlay:up" data-persist="true" >
+        <div data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </div>
+        <center><img src="Geeks/userLogin2.png" alt=""/></center>
+        <ul data-role="listview" data-style="inset">
+            <li><label for="username">CPF <input type="text" id="objLogin_itnUsuario" /></label></li>
+            <li><label for="password">Senha <input type="password" id="objLogin_itnSenha" /></label></li>
+        </ul>
+        
+        <div class="action-buttons">
+            <a id="objLogin_itnLogin" data-transition="overlay:down reverse" data-role="button" class="km-primary km-justified transitions-button" style="color: #ffF">Login</a><br />
+        </div>
+    </div>
+
+<!-- Obj App  Menu Lateal-->
+    <div data-role="drawer" id="objClienteSistema" data-title="Aplicativo" data-position="left" data-views="[]" style="width: 20em;">
+        <header data-role="header" >
+            <div data-role="navbar">
+                <span>Aplicativo</span>
+            </div>
+        </header>
+        <ul data-role="listview" class="km-listview-icons" id="objClienteSistema_itnLista">
+        </ul>
+    </div>
+
+<!-- Obj Modal-->
+    <div data-role="modalview" id="ObjModal" style="width: 200px; height: 200px;">
+    </div> 
+
+</body>
+</html>
