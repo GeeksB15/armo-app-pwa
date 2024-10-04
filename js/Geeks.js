@@ -3,10 +3,11 @@ var Geeks = {
      ,IndexDb:{}
      ,ExternalSQL: {}
      ,Objeto: {}
- }
+	 ,Plat: {}
+}
 
 
- Geeks.ExternalSQL.Sql = function (xSql){
+Geeks.ExternalSQL.Sql = function (xSql){
 	var url = "https://api.b15.com.br/sql/srv114"
     var requestDatabase = "armo"
     var result = null;
@@ -70,6 +71,7 @@ var Geeks = {
 Geeks.Plat.Sql = function (xSql){
 	var url = "https://api.b15.com.br/sql/srv5/ExecuteSQL"
     var requestDatabase = "GeeksPlat15a"
+	
     var result = null;
     var data = xSql;
 	
