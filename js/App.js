@@ -62,7 +62,7 @@ objLogin_init = function(){
         localStorage.setItem("objLogin_itnSenha", senha);
 
         debugger
-        var tmp = Geeks.ExternalSQL.Sql("Select o.CodigoPersonalizado from Objeto o where CodigoObjeto=173").Records[0].CodigoPersonalizado;
+        var tmp = Geeks.Plat.Sql("Select o.CodigoPersonalizado from Objeto o where CodigoObjeto=173").Records[0].CodigoPersonalizado;
         localStorage.setItem('CodigoPersonalizado'  , JSON.stringify(tmp));
         IniciaScriptBasico();
     });
