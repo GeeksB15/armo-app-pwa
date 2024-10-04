@@ -39,14 +39,16 @@ objLogin_init = function(){
     //Login 
     //$("#objLogin_itnUsuario").kendoMaskedTextBox({ mask: "000.000.000-00" });  //Coloca mascara do CPF   
     //Preenche usuário e senha guardado no Storage
-    $("#objLogin_itnUsuario").val(localStorage.getItem("objLogin_itnUsuario"));
-    $("#objLogin_itnSenha").val(localStorage.getItem("objLogin_itnSenha"));
+    $("#objLogin_itnUsuario").val(localStorage.getItem("objLogin_itnUsuario"))
+    $("#objLogin_itnSenha").val(localStorage.getItem("objLogin_itnSenha"))
+    $("#objLogin_itnApi").val(localStorage.getItem("objLogin_itnApi"))
 
     //Clicou em faser Login
     $("#objLogin_itnLogin").click(function(){
 
-        var usr = $("#objLogin_itnUsuario").val().trim();
-        var senha = $("#objLogin_itnSenha").val().trim();
+        var usr = $("#objLogin_itnUsuario").val().trim()
+        var senha = $("#objLogin_itnSenha").val().trim()
+        var api = $("#objLogin_itnApi").val().trim()
 
         if (usr == "") {
             alert("Você deve informar o usuário!", "Atenção");
@@ -58,10 +60,10 @@ objLogin_init = function(){
             return;
         }
 
-        localStorage.setItem("objLogin_itnUsuario", usr);
-        localStorage.setItem("objLogin_itnSenha", senha);
+        localStorage.setItem("objLogin_itnUsuario", usr)
+        localStorage.setItem("objLogin_itnSenha", senha)
+        localStorage.setItem("objLogin_itnApi", api)
 
-        debugger
         var tmp = Geeks.Plat.Sql("Select o.CodigoPersonalizado from Objeto o where CodigoObjeto=173").Records[0].CodigoPersonalizado;
         localStorage.setItem('CodigoPersonalizado'  , JSON.stringify(tmp));
         IniciaScriptBasico();
